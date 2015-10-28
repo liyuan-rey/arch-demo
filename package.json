@@ -1,0 +1,33 @@
+{
+  "name": "arch-demo",
+  "version": "1.0.0",
+  "description": "A architecture demo for large AngularJS applications.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyuan-rey/arch-demo.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "RequireJS",
+    "AngularJS",
+    "Project",
+    "Architecture"
+  ],
+  "author": "liyuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liyuan-rey/arch-demo/issues"
+  },
+  "homepage": "https://github.com/liyuan-rey/arch-demo#readme",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
+    "lodash": "^3.10.1",
+    "requirejs": "^2.1.20"
+  }
+}

@@ -1,0 +1,28 @@
+<!--
+                        ---------------------------------------------------------------
+                        |                                                             |
+            >>>>>>>>>>  |                      workspace                              |
+            |           |                                                             |
+            |           ---------------------------------------------------------------
+            |           |                 |                                           |
+            |           |                 |                                           |
+            |           |                 |                                           |
+            |           |                 |                                           |
+            |           |                 |                                           |
+   layout-default       |    navigator    |          content                          |
+            |           |                 |             |--<dummy>                    |
+            |           |                 |                   |--welcome              |
+            |           |                 |                   |--incident             |
+            |           |                 |                   |--emergency            |
+            |           |                 |                                           |
+            |           |                 |                                           |
+            |           |                 |                                           |
+            >>>>>>>>>>  |                 |                                           |
+                        |                 |                                           |
+                        ---------------------------------------------------------------
+//-->
+
+
+<div ui-view="workspace">layout workspace view</div>
+<div ui-view="navigator">layout navigator view</div>
+<div ui-view="content">layout content view</div>
