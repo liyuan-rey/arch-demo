@@ -5,8 +5,8 @@
 	
 	var loader = require.config({
 		context: 'archDemo',
-		//baseUrl: '.',
-		
+		baseUrl: './app', // Notice: relative to the file which contains 'data-main', aka 'index.html'
+
 		paths: {
 			'domReady': '../../node_modules/requirejs-domready/domReady',
 			'angular': '../../node_modules/angular/angular',
@@ -45,6 +45,7 @@
 		'./incident/incident.index',
 
 		'./emergency/emergency.index'
+		
 	], startApplication);
 	
 	////////////
