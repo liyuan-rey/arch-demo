@@ -38,7 +38,6 @@ define([
 
             function register(cfg) {
                 config.push(cfg);
-                //var t = $state.get();
                 $stateProvider.state(cfg.state);
             }
 

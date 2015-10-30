@@ -19,7 +19,7 @@ define([
     function configure($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('layout', {
-                //abstract: true,
+                abstract: true,
                 url: '/layout',
                 templateUrl: './app/layout-default.tpl.html'
                 //views: {
@@ -33,7 +33,7 @@ define([
                 //}
             })
             .state('layout.default', {
-                //abstract: true,
+                abstract: true,
                 url: '/default',
                 views: {
                     'workspace': {
@@ -56,24 +56,24 @@ define([
                         templateUrl: './app/welcome.tpl.html'
                     }
                 }
-            })
-            .state('layout.default.incident', {
-                url: '/incident',
-                views: {
-                    'dummy': {
-                        templateUrl: './app/incident/incident-list.tpl.html',
-                        controller: 'IncidentListController'
-                    }
-                }
-            })
-            .state('layout.default.emergency', {
-                url: '/emergency',
-                views: {
-                    'dummy': {
-                        templateUrl: './app/emergency/emergency-list.tpl.html',
-                        controller: 'EmergencyListController'
-                    }
-                }
+            //})
+            //.state('layout.default.incident', {
+            //    url: '/incident',
+            //    views: {
+            //        'dummy': {
+            //            templateUrl: './app/incident/incident-list.tpl.html',
+            //            controller: 'IncidentListController'
+            //        }
+            //    }
+            //})
+            //.state('layout.default.emergency', {
+            //    url: '/emergency',
+            //    views: {
+            //        'dummy': {
+            //            templateUrl: './app/emergency/emergency-list.tpl.html',
+            //            controller: 'EmergencyListController'
+            //        }
+            //    }
             //})
             //------------
             //.state('layout.workspace', {

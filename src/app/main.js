@@ -53,12 +53,13 @@
 	function startApplication (req, ng) {
 		req(['domReady'], function (domReady) {
 			domReady(function () {
+				// why 'ng.bootstrap(ng.$document, ['app']);' not works...
+				//ng.bootstrap(document, ['app']);
+
                 // how to use jqLite? ng.element('#archDemo'); not works
 				var archDemoElement = document.getElementById('archDemo');
                 ng.bootstrap(archDemoElement, ['app']);
 
-                // why 'ng.bootstrap(ng.$document, ['app']);' not works...
-                //ng.bootstrap(document, ['app']);
 			})
 		})
 	}

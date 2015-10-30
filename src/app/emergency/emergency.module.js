@@ -7,8 +7,8 @@ define([
     'use strict';
     
     var mdl = ng
-        .module('app.emergency', ['app.navigator']);
-        //.run(moduleRun);
+        .module('app.emergency', ['app.navigator'])
+        .run(moduleRun);
 
     moduleRun.$inject =
         ['$state', 'navigator'];

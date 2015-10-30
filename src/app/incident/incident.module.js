@@ -10,8 +10,8 @@ define([
     // require(['./incident-list.controller']);
 
     var mdl = ng
-        .module('app.incident', ['app.navigator']);
-        //.run(moduleRun);
+        .module('app.incident', ['app.navigator'])
+        .run(moduleRun);
 
     moduleRun.$inject =
         ['$state', 'navigator'];
